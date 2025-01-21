@@ -1,5 +1,4 @@
-﻿
-namespace AdventOfCode2023
+﻿namespace AdventOfCode2023
 {
     public class Day01
     {
@@ -16,8 +15,10 @@ namespace AdventOfCode2023
 
                 sum += GetTheNumber(row);
             }
+
             Console.WriteLine(sum);
         }
+
         public static void Task02(string input)
         {
             int sum = 0;
@@ -31,8 +32,8 @@ namespace AdventOfCode2023
 
                 sum += GetTheNumberFromTheString(row);
             }
-            Console.WriteLine(sum);
 
+            Console.WriteLine(sum);
         }
 
         private static int GetTheNumberFromTheString(string row)
@@ -60,11 +61,10 @@ namespace AdventOfCode2023
             int minIndexNumb = -1;
             int maxIndexNumb = -1;
 
-            foreach (var number in validNumbers.Keys) 
+            foreach (var number in validNumbers.Keys)
             {
                 int indexFirst = row.IndexOf(number);
                 int indexSecond = row.LastIndexOf(number);
-               
                 if (indexFirst != -1 && indexFirst < minIndexDict)
                 {
                     minIndexDict = indexFirst;
@@ -89,14 +89,14 @@ namespace AdventOfCode2023
 
             if (minIndexNumb != -1 && minIndexNumb < minIndexDict)
             {
-                firstDigit = (int)(row[minIndexNumb]) - 48;
+                firstDigit = (int)row[minIndexNumb] - 48;
             }
             else
             {
                 firstDigit = validNumbers[stringNumberF];
             }
 
-            for (int i = row.Length-1; i >= 0; i--)
+            for (int i = row.Length - 1; i >= 0; i--)
             {
                 if (char.IsDigit(row[i]))
                 {
@@ -107,14 +107,14 @@ namespace AdventOfCode2023
 
             if (maxIndexNumb != -1 && maxIndexNumb > maxIndexDict)
             {
-                secondDigit = (int)(row[maxIndexNumb]) - 48;
+                secondDigit = (int)row[maxIndexNumb] - 48;
             }
             else
             {
                 secondDigit = validNumbers[stringNumberL];
             }
 
-            return firstDigit * 10 + secondDigit;
+            return (firstDigit * 10) + secondDigit;
         }
 
         private static int GetTheNumber(string row)
@@ -125,7 +125,7 @@ namespace AdventOfCode2023
             {
                 if (char.IsDigit(row[i]))
                 {
-                    firstDigit = (int)(row[i]) - 48;
+                    firstDigit = (int)row[i] - 48;
                     break;
                 }
             }
@@ -134,16 +134,17 @@ namespace AdventOfCode2023
             {
                 if (char.IsDigit(row[i]))
                 {
-                    secondDigit = (int)(row[i]) - 48;
+                    secondDigit = (int)row[i] - 48;
                     break;
                 }
             }
+
             if (firstDigit == -1)
             {
                 return 0;
             }
 
-            return firstDigit * 10 + secondDigit;
+            return (firstDigit * 10) + secondDigit;
         }
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gcy714o57q0=",
+  "dgSpecHash": "3Lm+fvh6Qg4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\schhh\\Desktop\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\AdventOfCode2023.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\AdventOfCode2023.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\schhh\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
   "logs": []
 }
