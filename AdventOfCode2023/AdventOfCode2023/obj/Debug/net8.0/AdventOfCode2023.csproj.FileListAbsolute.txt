@@ -1,0 +1,14 @@
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.exe
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.deps.json
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.runtimeconfig.json
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.dll
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.pdb
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.AssemblyInfoInputs.cache
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.AssemblyInfo.cs
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.csproj.CoreCompileInputs.cache
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.dll
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\refint\AdventOfCode2023.dll
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.pdb
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.genruntimeconfig.cache
+C:\Users\schhh\Desktop\AdventOfCode\AdventOfCode2023\AdventOfCode2023\obj\Debug\net8.0\ref\AdventOfCode2023.dll
