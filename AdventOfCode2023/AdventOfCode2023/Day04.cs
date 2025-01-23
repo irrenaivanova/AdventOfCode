@@ -8,13 +8,46 @@
             string[] rows = input.Split("\r\n");
             foreach (var row in rows)
             {
-                sum += Points(row);
+                int winning = WiningCards(row);
+                sum += (int)Math.Pow(2, winning - 1);
             }
 
             Console.WriteLine(sum);
         }
 
-        private static int Points(string row)
+        public static void Task02(string input)
+        {
+            Dictionary<int, int> cardsCount = new Dictionary<int, int>();
+            string[] rows = input.Split("\r\n");
+            for (int i = 0; i < rows.Length; i++)
+            {
+                if (!cardsCount.ContainsKey(i + 1))
+                {
+                    cardsCount.Add(i + 1, 1);
+                }
+                else
+                {
+                    cardsCount[i + 1]++;
+                }
+
+                int cardsNumber = cardsCount[i + 1];
+                int winning = WiningCards(rows[i]);
+                for (int j = 1; j <= winning; j++)
+                {
+                    if (!cardsCount.ContainsKey(i + 1 + j))
+                    {
+                        cardsCount.Add(i + 1 + j, 0);
+                    }
+                    cardsCount[i + j + 1] += cardsNumber;
+                }
+
+            }
+
+            Console.WriteLine(cardsCount.Values.Sum());
+        }
+
+
+        private static int WiningCards(string row)
         {
             string[] parts = row.Split(new char[] { ':', '|' }, StringSplitOptions.TrimEntries);
             HashSet<int> win = parts[1].Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToHashSet();
@@ -33,11 +66,7 @@
                 return 0;
             }
 
-            return (int)Math.Pow(2, winning-1);
-        }
-            public static void Task02(string input)
-        {
-            throw new NotImplementedException();
+            return winning;
         }
     }
 }

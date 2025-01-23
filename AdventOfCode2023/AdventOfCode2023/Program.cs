@@ -13,8 +13,8 @@ public class Program
         // Day03.Task01(File.ReadAllText("../../../input.txt"));
         // Day03.Task02(File.ReadAllText("../../../input.txt"));
 
-         Day04.Task01(File.ReadAllText("../../../input.txt"));
-        // Day04.Task02(File.ReadAllText("../../../input.txt"));
+        // Day04.Task01(File.ReadAllText("../../../input.txt"));
+         Day04.Task02(File.ReadAllText("../../../input.txt"));
 
         // Day05.Task01(File.ReadAllText("../../../input.txt"));
         // Day05.Task02(File.ReadAllText("../../../input.txt"));

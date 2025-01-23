@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|c:\\users\\schhh\\desktop\\softuni\\adventofcode\\adventofcode2023\\adventofcode2023\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|solutionrelative:adventofcode2023\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|c:\\users\\schhh\\desktop\\softuni\\adventofcode\\adventofcode2023\\adventofcode2023\\day04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|solutionrelative:adventofcode2023\\day04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|c:\\users\\schhh\\desktop\\softuni\\adventofcode\\adventofcode2023\\adventofcode2023\\input2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|solutionrelative:adventofcode2023\\input2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|c:\\users\\schhh\\desktop\\softuni\\adventofcode\\adventofcode2023\\adventofcode2023\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|solutionrelative:adventofcode2023\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2EDA9BF8-0CCC-406F-ADF4-1E7AF44E43FB}|AdventOfCode2023\\AdventOfCode2023.csproj|c:\\users\\schhh\\desktop\\softuni\\adventofcode\\adventofcode2023\\adventofcode2023\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,20 +63,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Day04.cs",
               "DocumentMoniker": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\Day04.cs",
               "RelativeDocumentMoniker": "AdventOfCode2023\\Day04.cs",
-              "ToolTip": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\Day04.cs*",
-              "RelativeToolTip": "AdventOfCode2023\\Day04.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAIAwwBwAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\Day04.cs",
+              "RelativeToolTip": "AdventOfCode2023\\Day04.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIA5wB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T10:05:00.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "input2.txt",
               "DocumentMoniker": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\input2.txt",
               "RelativeDocumentMoniker": "AdventOfCode2023\\input2.txt",
@@ -102,13 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\Program.cs",
               "RelativeDocumentMoniker": "AdventOfCode2023\\Program.cs",
               "ToolTip": "C:\\Users\\schhh\\Desktop\\SoftUni\\AdventOfCode\\AdventOfCode2023\\AdventOfCode2023\\Program.cs",
               "RelativeToolTip": "AdventOfCode2023\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAwAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwBUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T09:58:58.292Z",
               "EditorCaption": ""
