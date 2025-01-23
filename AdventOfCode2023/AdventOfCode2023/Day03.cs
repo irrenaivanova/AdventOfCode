@@ -1,7 +1,4 @@
-﻿
-using System.Collections.Generic;
-
-namespace AdventOfCode2023
+﻿namespace AdventOfCode2023
 {
     public class Day03
     {
@@ -53,7 +50,7 @@ namespace AdventOfCode2023
             Console.WriteLine(sum);
         }
 
-        private static int TheNumberSum(string numberString, int startIndex,int row, char[,] matrix)
+        private static int TheNumberSum(string numberString, int startIndex, int row, char[,] matrix)
         {
             int number = int.Parse(numberString);
             int startX = row - 1 < 0 ? 0 : row - 1;
