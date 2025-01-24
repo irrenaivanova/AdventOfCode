@@ -4,6 +4,16 @@
     {
         public static void Task01(string input)
         {
+            TaskCommon(input, ListOfSeedsTask01);
+        }
+
+        public static void Task02(string input)
+        {
+            TaskCommon(input, ListOfSeedsTask02);
+        }
+
+        private static void TaskCommon(string input, Func<string, List<decimal>> seedExtractor)
+        {
             List<decimal> seeds = new List<decimal>();
             List<decimal> locations = new List<decimal>();
             List<int> rowsNumber = new List<int>();
@@ -18,11 +28,7 @@
 
                 if (rows[k].StartsWith("seeds:"))
                 {
-                    string[] args = rows[k].Split(new char[] { ':', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    for (int j = 1; j < args.Length; j++)
-                    {
-                        seeds.Add(decimal.Parse(args[j]));
-                    }
+                    seeds = seedExtractor(rows[k]);
                     continue;
                 }
 
@@ -98,9 +104,33 @@
             Console.WriteLine(locations.Min());
         }
 
-        public static void Task02(string input)
+        private static List<decimal> ListOfSeedsTask01(string row)
         {
-            throw new NotImplementedException();
+            List<decimal> seeds = new List<decimal>();
+            string[] args = row.Split(new char[] { ':', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            for (int j = 1; j < args.Length; j++)
+            {
+                seeds.Add(decimal.Parse(args[j]));
+            }
+
+            return seeds;
+        }
+
+        private static List<decimal> ListOfSeedsTask02(string row)
+        {
+            List<decimal> seeds = new List<decimal>();
+            string[] args = row.Split(new char[] { ':', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            for (int j = 1; j < args.Length; j += 2)
+            {
+                decimal start = decimal.Parse(args[j]);
+                decimal range = decimal.Parse(args[j + 1]);
+                for (int i = 0; i < range; i++)
+                {
+                    seeds.Add(start + i);
+                }
+            }
+
+            return seeds;
         }
     }
 }
