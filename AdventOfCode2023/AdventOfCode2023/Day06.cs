@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode2023
+﻿using System.Text;
+
+namespace AdventOfCode2023
 {
     public class Day06
     {
@@ -13,7 +15,7 @@
                 games.Add(new Game() { Time = times[i], Distance = distances[i] });
             }
 
-            int result = 1;
+            long result = 1;
             foreach (var game in games)
             {
                 result *= WaysOfWinning(game);
@@ -22,7 +24,7 @@
             Console.WriteLine(result);
         }
 
-        private static int WaysOfWinning(Game game)
+        private static long WaysOfWinning(Game game)
         {
             int result = 0;
             for (int i = 1; i < game.Time; i++)
@@ -36,17 +38,54 @@
             return result;
         }
 
+
+
         public static void Task02(string input)
         {
-            throw new NotImplementedException();
+            string[] rows = input.Split('\n');
+            string[] times = rows[0].Split(new char[] { ':', ' ' }, StringSplitOptions.RemoveEmptyEntries).Skip(1).ToArray();
+            string[] distances = rows[1].Split(new char[] { ':', ' ' }, StringSplitOptions.RemoveEmptyEntries).Skip(1).ToArray();
+            var sbTimes = new StringBuilder();
+            foreach (string s in times)
+            {
+                sbTimes.Append(s);
+            }
+            long time = long.Parse(sbTimes.ToString().Trim());
+
+            var sbDistance = new StringBuilder();
+            foreach (string s in distances)
+            {
+                sbDistance.Append(s);
+            }
+
+            long distance = long.Parse(sbDistance.ToString().Trim());
+
+
+            var game = new Game() { Time = time, Distance = distance};
+            Console.WriteLine(WaysOfWinning2(game));
+
         }
+
+        private static long WaysOfWinning2(Game game)
+        {
+            long totalTime = game.Time;
+            long record = game.Distance;
+
+            long d = totalTime*totalTime - 4 * record;
+            long x1 = (long)Math.Floor((double)(totalTime + (long)Math.Sqrt(d))/2);
+            long x2 = (long)Math.Floor((double)(totalTime - (long)Math.Sqrt(d)) / 2);
+
+            return x1 - x2;
+        }
+
     }
+
 
     public class Game
     {
-        public int Time { get; set; }
+        public long Time { get; set; }
 
-        public int Distance { get; set; }
+        public long Distance { get; set; }
     }
 
 }
