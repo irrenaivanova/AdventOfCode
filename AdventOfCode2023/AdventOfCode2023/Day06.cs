@@ -68,14 +68,15 @@ namespace AdventOfCode2023
 
         private static long WaysOfWinning2(Game game)
         {
+            // x * (totalTime - x) > record + 1
             long totalTime = game.Time;
             long record = game.Distance;
 
-            long d = totalTime*totalTime - 4 * record;
+            long d = totalTime * totalTime - 4 * record;
             long x1 = (long)Math.Floor((double)(totalTime + (long)Math.Sqrt(d))/2);
-            long x2 = (long)Math.Floor((double)(totalTime - (long)Math.Sqrt(d)) / 2);
+            long x2 = (long)Math.Ceiling((double)(totalTime - (long)Math.Sqrt(d)) / 2);
 
-            return x1 - x2;
+            return x1 - x2 + 1;
         }
 
     }
