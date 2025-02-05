@@ -1,7 +1,6 @@
 ﻿string[] input = File.ReadAllLines("input.txt");
 Queue<char> instructions = new Queue<char>();
 Dictionary<string, string[]> path = new Dictionary<string, string[]>();
-
 int index = 0;
 for (int i = 0; i < input.Length; i++)
 {
@@ -13,7 +12,7 @@ for (int i = 0; i < input.Length; i++)
         }
         continue;
     }
-    index = i+1;
+    index = i + 1;
     break;
 }
 
@@ -22,27 +21,31 @@ for (int i = index; i < input.Length; i++)
     string[] maze = input[i].Split(new char[] { '=', '(', ',', ')' }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(x => x.Trim())
                     .Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
-    path.Add(maze[0],new string[] { maze[1], maze[2] });
+    path.Add(maze[0], new string[] { maze[1], maze[2] });
 }
 
-string currentNode = "AAA";
-
 int count = 0;
-while(true)
+string[] nodes = path.Where(x => x.Key[2] == 'A').Select(x => x.Key).ToArray();
+while (true)
 {
     var instruction = instructions.Dequeue();
-    if (instruction == 'L')
+    
+    for (int i = 0; i < nodes.Length; i++)
     {
-        currentNode = path[currentNode][0];
+        if (instruction == 'L')
+        {
+            nodes[i] = path[nodes[i]][0];
+        }
+
+        if (instruction == 'R')
+        {
+            nodes[i] = path[nodes[i]][1];
+        }
     }
 
-    if (instruction == 'R')
-    {
-        currentNode = path[currentNode][1];
-    }
     count++;
     instructions.Enqueue(instruction);
-    if (currentNode == "ZZZ")
+    if (nodes.All(x => x[2] == 'Z'))
     {
         break;
     }

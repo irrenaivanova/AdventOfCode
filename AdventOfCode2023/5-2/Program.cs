@@ -37,9 +37,6 @@ for (int seedPairId = 0; seedPairId < seedPairs.Length / 2; seedPairId++)
     seeds.Add(new(startingSeed, length));
 }
 
-long best = long.MaxValue;
-
-
 var seedRanges = seeds;
 foreach (var group in mapGroups)
 {
